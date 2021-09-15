@@ -1,13 +1,17 @@
+#' Euclidean-Algorithm
+#'
 #' Find the greatest common divisor of two numbers.
 #'
-#' Pseudocode from: https://en.wikipedia.org/wiki/Euclidean_algorithm. 
+#' Pseudocode from: https://en.wikipedia.org/wiki/Euclidean_algorithm
 #'
-#' @param a A number
-#' @param b A number
-#' @return The greatest common divisor
+#' @param a A number (int)
+#' @param b A number (int)
+#' @return The greatest common divisor of both numbers.
 #' @examples
 #' euclidean(100, 1000)
+#' euclidean(123, 567890)
 #' @export
+
 
 euclidean <- function(a, b) {
   if (!is.numeric(a) | !is.numeric(b)) {
